@@ -1,0 +1,12 @@
+[
+  {
+    "_id": "61a8d0e9a2b6fe8b9876c544",
+    "name": "John Doe",
+    "posts": ["61a8d0e9a2b6fe8b9876c543"]
+  },
+  {
+    "_id": "61a8d0e9a2b6fe8b9876c546",
+    "name": "Jane Smith",
+    "posts": ["61a8d0e9a2b6fe8b9876c545"]
+  }
+]

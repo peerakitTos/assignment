@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: service-deployment
+  labels:
+    app: service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: service
+  template:
+    metadata:
+      labels:
+        app: service
+    spec:
+      containers:
+        - name: nodeserver
+          image: peerakittos/server:latest
+          ports:
+            - containerPort: 3000
+          env:
+            - name: DB_HOST
+              value: mongo
+            - name: DB_NAME
+              value: assignment-db
